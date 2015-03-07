@@ -1,0 +1,191 @@
+/***** GENERAL STYLES DESKTOP*******/
+@media screen and (min-width: 400px) and (max-width: 1400px){
+    @import url('reset.css');
+    html{
+        /*margin: 0 auto;*/
+        position: relative;
+        overflow-x:hidden;
+    }
+    html:after{
+        content : "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url(http://4.bp.blogspot.com/-XNtiZDWLWZY/UmlZqKP0QSI/AAAAAAAACS8/qjd0iFDbzf0/s1600/17550014.JPG) no-repeat fixed center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    body{
+        font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+        color: #1e2124;
+        width: 100%;
+        padding: 0;
+        /*margin-left: 0 auto;*/
+    }
+/***** HEADER ******/
+    #topbox{
+        position: relative;
+        width: 86%;
+        margin: 0 auto; 
+        padding: 1% 7%; 
+        z-index: 100;         
+    }
+    #studentInfo{
+        width:100%;
+        padding: 1% 0%;
+        margin:0;
+       /* background-color: rgba(255,255,255, 0.77);  */
+        border-top: 2px solid #1e2124;
+        border-bottom: 2px solid #1e2124;
+        
+    }
+    #studentInfo span{
+        width: 33%;
+        margin-right: 25%;
+    }
+    #studentInfo span:first-child{
+        margin-left: 3%;
+    }
+    #classtitle{
+        font-size: 2em;
+        text-align: center;
+        background-color: 
+
+    }
+    #classtitle a:link{
+        text-decoration: none;
+        color: #1e2124;
+    }
+    #classtitle a:visited{
+        color: #1e2124;
+    }
+    #classtitle a:hover{
+        color: #aaaaaa;
+    }
+
+/*********** NAVIGATION **********/
+#mainMenu{
+    /*position: relative;*/
+   /* background-color: rgba(30,220,170, 0.77);*/
+    width: 30%;
+    z-index: 100;
+    /*margin: 0 auto -300px auto;*/
+}
+#mainMenu ol{
+    list-style-type: none;
+}
+#mainMenu ol li{
+    padding:3%;
+    font-size: 1.5em;
+    line-height: 1.1em;
+}
+#mainMenu ol li a:link{
+    padding:2%;
+    text-decoration: none;
+    color: #1e2124;
+}
+#mainMenu ol li a:visited{
+    color: #1e2124;
+}
+#mainMenu ol li a:hover{
+    background-color: #d9e6f6;
+    color: #1e2124;
+    border: 1px solid #1e2124;
+}
+/****** MAIN CONTENT SECTION ****/
+
+#mainContent{
+    overflow: hidden;
+    width: 80%;
+    height: 100%;
+    padding: 3%;
+    margin:-397px auto 0px auto;
+    background-color: rgba(255,255,255, 0.77);
+
+}
+#mainContent ol{
+    width: 70%;
+    float: right;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+h2{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+h3{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+h4{
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+#mainContent > h1, #mainContent >h2,#mainContent >h3,#mainContent >h4,#mainContent >h5,#mainContent >h6{
+    width:70%;
+    float:right;
+}
+#upcoming{
+    margin-top: 20px;
+    width: 70%;
+    float: right;
+    border: 2px dashed #1e2124;
+}
+#upcoming h1{
+    text-align: center;
+}
+.box{
+    width:45%;
+    margin:2%;
+    float: left;
+}
+.box h1{
+    width:50%;
+    font-size: 1.3em;
+    text-align: left;
+    border-bottom: 1px solid #1e2124;
+
+}
+/******** Assignment Page **********/ 
+
+/********** Calendar Page ***********/
+table{
+    border-collapse: collapse;
+    
+}
+ 
+td{
+    width: 1.2in;
+    height: 1.2in;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #1e2724;
+}
+ 
+.monthHeader{
+    font-size: 2em;
+    padding: 10px;
+}
+ 
+/*I can't figure out how to get the date number to live in the top left corner of each td*/
+.date{
+    position: relative;
+    top: 0%;
+    right: 0%;
+    font-size: 1.5em;
+}
+ 
+a:hover{
+    background-color: #d9e6f6;
+}
+
+/******** FOOTER *******/
+}
