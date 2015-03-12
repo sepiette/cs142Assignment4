@@ -3,127 +3,27 @@
 /**** Assignments, Lectures, Resources -- SARA *****/
 /**** Calendar, Submit Assignment -- KEVIN****/ 
 /***** GENERAL STYLES DESKTOP*******/
-@media screen and (min-width: 800px) and (max-width: 1800px){
+@media screen and (min-width: 400px) and (max-width: 1800px){
     @import url('reset.css');
-    html{
-        /*margin: 0 auto;*/
-        position: relative;
-        background: url(http://4.bp.blogspot.com/-XNtiZDWLWZY/UmlZqKP0QSI/AAAAAAAACS8/qjd0iFDbzf0/s1600/17550014.JPG) no-repeat center;
-        background-attachment: fixed;
-        background-size: cover;
-    }
 
-    body{
+
+/******** GENERAL HTML *********/
+html{
+    position: relative;
+    background: url(http://4.bp.blogspot.com/-XNtiZDWLWZY/UmlZqKP0QSI/AAAAAAAACS8/qjd0iFDbzf0/s1600/17550014.JPG) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+body{
         font-family: Futura, "Trebuchet MS", Arial, sans-serif;
         color: #1e2124;
         width: 100%;
         padding: 0;
-        /*margin-left: 0 auto;*/
-    }
-/***** HEADER ******/
-    #topbox{
-        position: relative;
+        background-color: rgba(255,255,255, 0.77);
         width: 80%;
-        height:120px;
-        margin: 0 auto; 
-        padding:1% 1%; 
-        z-index: 200;   
-         background-color: rgba(255,255,255, 0.77);        
+        margin:0 auto;
+        padding:2% 2%;
     }
-    #studentInfo{
-        width:100%;
-        padding: 1% 0%;
-        margin:0;
-       /* background-color: rgba(255,255,255, 0.77);  */
-        border-top: 2px solid #1e2124;
-        border-bottom: 2px solid #1e2124;
-        
-    }
-    #studentInfo span{
-        width: auto;
-        margin-right: 25%;
-    }
-    #studentInfo span:first-child{
-        margin-left: 3%;
-    }
-    #classtitle{
-        font-size: 2em;
-        text-align: center;
-        background-color: 
-
-    }
-    #classtitle a:link{
-        text-decoration: none;
-        color: #1e2124;
-    }
-    #classtitle a:visited{
-        color: #1e2124;
-    }
-    #classtitle a:hover{
-        color: #4b7582;
-    }
-
-/*********** NAVIGATION **********/
-#mainMenu{
-    position: absolute;
-    top:200px;
-    margin-top: 0 auto;
-   /* background-color: rgba(30,220,170, 0.77);*/
-    width: 28%;
-    z-index: 200;
-    /*margin: 0 auto -300px auto;*/
-}
-#mainMenu ol{
-    list-style-type: none;
-}
-#mainMenu ol li{
-    padding:3%;
-    font-size: 1.3em;
-    line-height: 1.1em;
-}
-
-/********* LINKS *********/
-ol li.menuLink a:link{
-    padding:2%;
-    text-decoration: none;
-    color: #1e2124;
-}
-ol li.menuLink a:visited{
-    color: #1e2124;
-}
-ol li.menuLink a:hover{
-    background-color: #d9e6f6;
-    color: #1e2124;
-    border: 1px solid #1e2124;
-}
-li.video a:link, li.link a:link, a.url:link {
-    text-decoration: none;
-    color: #1e2124;
-    border-bottom: 1px dashed #1e2124;
-}
-li.video a:visited, li.link a:visited, a.url:visited{
-    color: #1e2124;
-}
-li.video a:hover, li.link a:hover, a.url:hover{
-    color: #4b7582;
-    border:none;
-    
-}
-/****** MAIN CONTENT SECTION ****/
-
-#mainContent{
-    z-index: 100;
-    position: relative;
-    top:400px;
-    overflow: hidden;
-    width: 80%;
-    height: 100%;
-    padding: 1%;
-    margin:-400px auto 0px auto;
-    background-color: rgba(255,255,255, 0.77);
-
-}
-
 h1{
     font-weight: bold;
     font-size: 1.5em;
@@ -141,208 +41,87 @@ h4{
     font-size: 0.9em;
 }
 
-#mainContent > h1,#mainContent >h3,#mainContent >h4,#mainContent >h5,#mainContent >h6{
-    width:65%;
-    float:right;
-}
-#mainContent h2{
-    font-size: 2em;
-    width:auto;
-    clear:both;
-    border-top:1px dashed #1e2124;
-    padding-left:1%;
-    margin-left: 3%
-}
-#upcoming h1{
-    text-align: center;
-    font-size: 1.8em;
-    position:absolute;
-    top:-20px;
-    left:58%;
-}
-#upcoming div.box h1{
-    position: relative;
-    top:0;
-    left:0;
-    width: 100%;
-    font-size: 1.3em;
-    text-align: center;
-    flex:2;  
-}
+/************ LINKS **************/
+ #classtitle{
+        font-size: 2em;
+        text-align: center;
+        background-color: 
 
-#upcoming{
-    margin-top: 3%;
-    width: 70%;
-   float: right;
-   top: 30%;
-   display: flex;
-   align-items:top;
-   flex-flow: row wrap;
-   align-content:flex-end;
-   justify-content:space-around;
-}
-
-.box{
-    width:45%;
-    margin:2% 1%;
-    border: 1px solid #1e2124;
-    border-radius: 8px;
-    flex:1;
-    -webkit-box-shadow: inset -7px -14px 86px 0px rgba(170,170,170,.77);
-    -moz-box-shadow: inset -7px -14px 86px 0px rgba(170,170,170,.77);
-    box-shadow: inset -7px -14px 86px 0px rgba(170,170,170,.77 );
-}
-
-#mainContent p{
-    width:100%;
-    clear:both;
-}
-#upcoming + p{
-    width: 70%;
-    clear:left;
-    float:right;
-}
-/******** Assignment Page **********/ 
-#mainContent .box ol{
-    width: 90%;
-    margin:0 auto;
-    padding:0;
-   list-style: inside decimal;
-
-}
-#mainContent .box ol li{
-    line-height: 30px;
-}
-ol.AssignmentsLink {
-    width:70%;
-    margin:0 auto;
-    list-style:inside upper-roman;
-    border: 1px solid #1e2124;
-    border-radius: 8px;
-    padding: .5%;
-
-}
-ol.AssignmentsLink li{
-    line-height: 3em;
-}
-ol.AssignmentsLink li:nth-child(odd){
-    -webkit-box-shadow: inset -7px -14px 86px 0px rgba(170,170,170,.77);
-    -moz-box-shadow: inset -7px -14px 86px 0px rgba(170,170,170,.77);
-    box-shadow: inset -7px -14px 86px 0px rgba(170,170,170,.77 );
-}
-
-/********** Lecture Page ************/
-ol.LecturesLink {
-    width:70%;
-    margin:0 auto;
-    list-style:inside upper-roman;
-    border: 1px solid #1e2124;
-    border-radius: 8px;
-    padding: .5%;
-
-}
-ol.LecturesLink li{
-    line-height: 3em;
-}
-ol.LecturesLink li:nth-child(odd){
-    -webkit-box-shadow: inset -7px -14px 86px 0px rgba(170,170,170,.77);
-    -moz-box-shadow: inset -7px -14px 86px 0px rgba(170,170,170,.77);
-    box-shadow: inset -7px -14px 86px 0px rgba(170,170,170,.77 );
-}
-
-#slide {
-    width: 100%;
-    clear:both;
-}
-/********** Resources Page **********/
-#otherMedia {
-    width: 100%;
-    clear:both;
-}
-
-#otherMedia + h1, #otherMedia > h1{
-    width:100%;
-    margin-left:3%;
-    float:left;
-
-}
-#otherMedia ol {
-    width:90%;
-    margin: 0 auto;
-    list-style: outside none;
-
-}
-#otherMedia ol li figure img{
-    width: 30px;
-    height: 30px;
-    vertical-align: middle;
-}
-#otherMedia figure{
-    margin: 0 auto;
-    height: 40px;
-    width:inherit;
-    text-align: center;
-    vertical-align: middle;
-    padding: 5px; 
-}
-#otherMedia ol li {
-    background-color: rgba(170,170,170,.5);
-    position: relative;
-    display: inline-block;
-    margin: 5px;
-    padding-bottom: 20px;
-    width:85%;
-    height:60px;
-    text-align: center;
-    line-height: 20px;
-}
-
-#otherMedia ol li:after{
-    content: '';
-    position: absolute;
-    left:100%;
-    width: 0;
-    height: 0;
-    border-top: 40px solid transparent;
-    border-left: 30px solid  rgba(170,170,170,.5);
-    border-bottom: 40px solid transparent;
-    margin: -50px 0px; 
-}
-/********** Calendar Page ***********/
-table{
-    border-collapse: collapse;   
-}
- 
-td{
-    width: 1.2in;
-    height: 1.2in;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #1e2724;
-}
- 
-.monthHeader{
-    font-size: 2em;
-    padding: 10px;
-}
- 
-/*I can't figure out how to get the date number to live in the top left corner of each td*/
-.date{
-    position: relative;
-    top: 0%;
-    right: 0%;
-    font-size: 1.5em;
-}
- 
-/******** FOOTER *******/
-footer{
-        position: relative;
-        top:400px;
-        background-color: rgba(255,255,255, 0.77); 
-        color: #1e2124;
-        width: 80%;
-        padding: 1% 1%;
-        margin: 0 auto;
-        border-top: 1px solid #1e2124;
     }
+    #classtitle a:link{
+        text-decoration: none;
+        color: #1e2124;
+        border-bottom: 1px dashed #1e2124;
+    }
+    #classtitle a:visited{
+        color: #1e2124;
+    }
+    #classtitle a:hover{
+        color: #4b7582;
+        border:none;
+    }
+
+    ol li.menuLink a:link{
+        text-decoration: none;
+        color: #1e2124;
+    }
+    ol li.menuLink a:visited{
+        color: #1e2124;
+    }
+    ol li.menuLink:hover{
+        background-color: #d9e6f6;
+        color: #1e2124;
+        /*border: 1px solid #1e2124;*/
+    }
+
+    li.video a:link, li.link a:link, a.url:link {
+        text-decoration: none;
+        color: #1e2124;
+        border-bottom: 1px dashed #1e2124;
+    }
+    li.video a:visited, li.link a:visited, a.url:visited{
+        color: #1e2124;
+    }
+    li.video a:hover, li.link a:hover, a.url:hover{
+        color: #4b7582;
+        border:none;
+        
+    }
+/*############# HEADER ##################*/
+    #studentInfo{
+        width:100%;
+        margin:1% 0 1% 0;
+        padding: 1% 0%;
+        border-top: 2px solid #1e2124;
+        border-bottom: 2px solid #1e2124;
+    }
+/*########## NAVIGATION #################*/
+  /*  #mainMenu{
+        border-bottom: 2px solid #1e2124;
+    }*/
+    #mainMenu ol{
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+        margin:0;
+    }
+    #mainMenu ol li{
+        display: inline-block;
+        flex:1;
+        text-align: center;
+        padding-top:5px;
+        margin:5px;
+        border: 1px solid #1e2124;
+        border-radius: 20px;
+    }
+
+   
+
+
+
+
+
+
+
+
 }
