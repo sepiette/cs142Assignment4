@@ -61,17 +61,24 @@ h4{
         border:none;
     }
 
-    ol li.menuLink a:link{
+    ol li.menuLink a:link, #studentInfo a:link{
+        width:100%;
+        height:100%;
+        padding:10px;
         text-decoration: none;
-        color: #1e2124;
+        color: #4b7582;
     }
-    ol li.menuLink a:visited{
+    ol li.menuLink a:visited, #studentInfo a:visited{
+        width:100%;
+        height:100%;
+        padding:10px;
+        color: #4b7582;
+    }
+    ol li.menuLink a:hover, #studentInfo a:hover{
         color: #1e2124;
     }
     ol li.menuLink:hover{
         background-color: #d9e6f6;
-        color: #1e2124;
-        /*border: 1px solid #1e2124;*/
     }
 
     li.video a:link, li.link a:link, a.url:link {
@@ -90,38 +97,105 @@ h4{
 /*############# HEADER ##################*/
     #studentInfo{
         width:100%;
-        margin:1% 0 1% 0;
+        margin:1% 0 0 0;
         padding: 1% 0%;
         border-top: 2px solid #1e2124;
-        border-bottom: 2px solid #1e2124;
+        border-bottom: 5px double #1e2124;
+    }
+    #studentInfo span{
+        width:20%;
+        margin-right: 20%;
     }
 /*########## NAVIGATION #################*/
-  /*  #mainMenu{
+    #mainMenu{
         border-bottom: 2px solid #1e2124;
-    }*/
+        width: 100%;
+        margin:0 auto;
+    }
     #mainMenu ol{
+        width:90%;
         list-style-type: none;
-        display: flex;
         padding: 0;
         margin:0;
     }
     #mainMenu ol li{
         display: inline-block;
-        flex:1;
-        text-align: center;
-        padding-top:5px;
-        margin:5px;
-        border: 1px solid #1e2124;
-        border-radius: 20px;
+        font-size: 1.1em;
+        padding:2% 0.5%;
+        margin:0;
+        /*border-radius: 15px;*/
+    }
+     #mainMenu ol li:last-child{
+        border:none;
+    }
+   
+/*######### MILESTONES ############*/
+
+    #upcoming{
+        position: relative;
+        margin-top: 5%;
+       clear:left;
+       display: flex;
+       align-items:top;
+       flex-flow: row wrap;
+       align-content:flex-end;
+       justify-content:space-around;
     }
 
-   
+    #upcoming h1{
+    position: absolute;
+    top:-60px;
+    left: 40%;
+    font-size: 2em;
+    }
+    #upcoming div.box h1{
+        font-size:1.5em;
+        position: static;
+        text-align: center;
+    }
 
+    .box{
+        width:45%;
+        margin:2% 1%;
+        border: 5px double #1e2124;
+        flex:1;
+        -webkit-box-shadow: inset -7px -14px 86px 0px rgba(170,170,170,.77);
+        -moz-box-shadow: inset -7px -14px 86px 0px rgba(170,170,170,.77);
+        box-shadow: inset -7px -14px 86px 0px rgba(170,170,170,.77 );
+    }
 
+    
+    .box ol{
+        width: 90%;
+        margin:0 auto;
+        padding:0;
+       list-style: inside decimal;
+    }
+    .box ol li{
+        line-height: 30px;
+    }
+/*############ ASSIGNMENTS ############*/
+#assignments #mainContent h2{
+    font-size: 1.5em;
+}
+#assignments ol.AssignmentsLink {
+    width:70%;
+    margin: 0 auto;
+    list-style:inside upper-roman;
+    border: 1px solid #1e2124;
+    border-radius: 8px;
+    padding: .5%;
 
+}
+#assignments ol.AssignmentsLink li{
+    line-height: 3em;
+}
+#assignments ol.AssignmentsLink li:nth-child(odd){
+    -webkit-box-shadow: inset -7px -14px 86px 0px rgba(170,170,170,.77);
+    -moz-box-shadow: inset -7px -14px 86px 0px rgba(170,170,170,.77);
+    box-shadow: inset -7px -14px 86px 0px rgba(170,170,170,.77 );
+}
 
-
-
-
+/*############ RESOURCES ##############*/
 
 }
