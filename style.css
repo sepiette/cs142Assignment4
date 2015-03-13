@@ -486,6 +486,16 @@ h4{
         margin-top:1em;
     }
 
+    #grades .NotGraded {
+        background-color: rgba(170, 0, 16, 0.5);
+    }
+    #grades .GradingStarted {
+        background-color: rgba(0, 16, 170, 0.5);
+    }
+    #grades .GradesReleased{
+        background-color: rgba(0, 170, 16, 0.5);
+    }
+
     /********* Calendar *************/
     #calendar table{
         border-collapse: collapse;
