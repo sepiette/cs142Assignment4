@@ -81,15 +81,15 @@ h4{
         background-color: #d9e6f6;
     }
 
-    li.video a:link, li.link a:link, a.url:link {
+    li.video a:link, li.link a:link, a.url:link, p.firstLine a:link, #mainContent a:link {
         text-decoration: none;
         color: #1e2124;
         border-bottom: 1px dashed #1e2124;
     }
-    li.video a:visited, li.link a:visited, a.url:visited{
+    li.video a:visited, li.link a:visited, a.url:visited, p.firstLine a:visited, #mainContent a:visited{
         color: #1e2124;
     }
-    li.video a:hover, li.link a:hover, a.url:hover{
+    li.video a:hover, li.link a:hover, a.url:hover, p.firstLine a:hover, #mainContent a:hover{
         color: #4b7582;
         border:none;
         
@@ -120,7 +120,7 @@ h4{
     }
     #mainMenu ol li{
         display: inline-block;
-        font-size: 1.1em;
+        font-size: 1.0em;
         padding:2% 0.5%;
         margin:0;
         /*border-radius: 15px;*/
@@ -144,10 +144,12 @@ h4{
 
     #upcoming h1{
     position: absolute;
-    top:-60px;
-    left: 40%;
+    top:-70px;
+    width:100%;
+    text-align: center;
     font-size: 2em;
     }
+
     #upcoming div.box h1{
         font-size:1.5em;
         position: static;
@@ -176,7 +178,11 @@ h4{
     }
 /*############ ASSIGNMENTS ############*/
 #assignments #mainContent h2{
-    font-size: 1.5em;
+    font-size: 1.7em;
+    text-align: center;
+    width:50%;
+    margin:5% auto;
+    border-bottom: 1px dashed #1e2124;
 }
 #assignments ol.AssignmentsLink {
     width:70%;
@@ -196,6 +202,71 @@ h4{
     box-shadow: inset -7px -14px 86px 0px rgba(170,170,170,.77 );
 }
 
+#assign #otherMedia ol{
+    width:50%;
+}
+#assign #slide h2{
+    font-size:1.1em;
+}
 /*############ RESOURCES ##############*/
+#otherMedia {
+    width: 100%;
+    clear:both;
+}
 
+#otherMedia + h1, #otherMedia > h1{
+    width:100%;
+    margin-left:3%;
+    float:left;
+
+}
+#otherMedia ol {
+    width:90%;
+    margin: 0 auto;
+    list-style: outside none;
+
+}
+#otherMedia ol li figure img{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+#otherMedia figure{
+    margin: 0 auto;
+    height: 40px;
+    width:inherit;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px; 
+}
+#otherMedia ol li {
+    background-color: rgba(170,170,170,.5);
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+    padding-bottom: 20px;
+    width:85%;
+    height:60px;
+    text-align: center;
+    line-height: 20px;
+}
+
+#otherMedia ol li:after{
+    content: '';
+    position: absolute;
+    left:100%;
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-left: 30px solid  rgba(170,170,170,.5);
+    border-bottom: 40px solid transparent;
+    margin: -50px 0px; 
+}
+
+/*############ FOOTER ##############*/
+footer{
+        width:100%;
+        margin-top: 1%;
+        border-top: 1px solid #1e2124;
+    }
 }
