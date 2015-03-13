@@ -1,7 +1,12 @@
-@media screen and (min-width: 800px) and (max-width: 1800px){
+/* CSS designed by Robert M. Erickson */
+/*** Sick, Syllabus, Grades -- STEPHANIE ****/
+/**** Assignments, Lectures, Resources -- SARA *****/
+/**** Calendar, Submit Assignment -- KEVIN****/
+/***** GENERAL STYLES DESKTOP*******/
+@media screen and (min-width: 400px) and (max-width: 1800px){
     @import url('reset.css');
+    /******** GENERAL HTML *********/
     html{
-        /*margin: 0 auto;*/
         position: relative;
         background: url(http://4.bp.blogspot.com/-XNtiZDWLWZY/UmlZqKP0QSI/AAAAAAAACS8/qjd0iFDbzf0/s1600/17550014.JPG) no-repeat center;
         background-attachment: fixed;
@@ -12,103 +17,10 @@
         color: #1e2124;
         width: 100%;
         padding: 0;
-        /*margin-left: 0 auto;*/
-    }
-    /***** HEADER ******/
-    #topbox{
-        position: relative;
-        width: 80%;
-        height:120px;
-        margin: 0 auto;
-        padding:1% 1%;
-        z-index: 200;
         background-color: rgba(255,255,255, 0.77);
-    }
-    #studentInfo{
-        width:100%;
-        padding: 1% 0%;
-        margin:0;
-        /* background-color: rgba(255,255,255, 0.77); */
-        border-top: 2px solid #1e2124;
-        border-bottom: 2px solid #1e2124;
-    }
-    #studentInfo span{
-        width: auto;
-        margin-right: 25%;
-    }
-    #studentInfo span:first-child{
-        margin-left: 3%;
-    }
-    #classtitle{
-        font-size: 2em;
-        text-align: center;
-        background-color:
-    }
-    #classtitle a:link{
-        text-decoration: none;
-        color: #1e2124;
-    }
-    #classtitle a:visited{
-        color: #1e2124;
-    }
-    #classtitle a:hover{
-        color: #4b7582;
-    }
-    /*********** NAVIGATION **********/
-    #mainMenu{
-        position: absolute;
-        top:138px;
-        margin-top: 0 auto;
-        /* background-color: rgba(30,220,170, 0.77);*/
-        width: 30%;
-        z-index: 200;
-        /*margin: 0 auto -300px auto;*/
-    }
-    #mainMenu ol{
-        list-style-type: none;
-    }
-    #mainMenu ol li{
-        padding:3%;
-        font-size: 1.3em;
-        line-height: 1.1em;
-    }
-    /********* LINKS *********/
-    ol li.menuLink a:link{
-        padding:2%;
-        text-decoration: none;
-        color: #1e2124;
-    }
-    ol li.menuLink a:visited{
-        color: #1e2124;
-    }
-    ol li.menuLink a:hover{
-        background-color: #d9e6f6;
-        color: #1e2124;
-        border: 1px solid #1e2124;
-    }
-    li.video a:link, li.link a:link, a.url:link {
-        text-decoration: none;
-        color: #1e2124;
-        border-bottom: 1px dashed #1e2124;
-    }
-    li.video a:visited, li.link a:visited, a.url:visited{
-        color: #1e2124;
-    }
-    li.video a:hover, li.link a:hover, a.url:hover{
-        color: #4b7582;
-        border:none;
-    }
-    /****** MAIN CONTENT SECTION ****/
-    #mainContent{
-        z-index: 100;
-        position: relative;
-        top:400px;
-        overflow: hidden;
         width: 80%;
-        height: 100%;
-        padding: 1%;
-        margin:-400px auto 0px auto;
-        background-color: rgba(255,255,255, 0.77);
+        margin:0 auto;
+        padding:2% 2%;
     }
     h1{
         font-weight: bold;
@@ -126,95 +38,173 @@
         font-weight: bold;
         font-size: 0.9em;
     }
-    #mainContent > h1, #mainContent >h2,#mainContent >h3,#mainContent >h4,#mainContent >h5,#mainContent >h6{
-        width:65%;
-        float:right;
-    }
-    #mainContent h2{
+    /************ LINKS **************/
+    #classtitle{
         font-size: 2em;
-    }
-    #upcoming h1{
         text-align: center;
-        font-size: 1.8em;
-        position:absolute;
-        top:-2%;
-        left:58%;
+        background-color:
     }
-    #upcoming div.box h1{
-        position: relative;
-        top:0;
-        left:0;
+    #classtitle a:link{
+        text-decoration: none;
+        color: #1e2124;
+        border-bottom: 1px dashed #1e2124;
+    }
+    #classtitle a:visited{
+        color: #1e2124;
+    }
+    #classtitle a:hover{
+        color: #4b7582;
+        border:none;
+    }
+    ol li.menuLink a:link, #studentInfo a:link{
+        width:100%;
+        height:100%;
+        padding:10px;
+        text-decoration: none;
+        color: #4b7582;
+    }
+    ol li.menuLink a:visited, #studentInfo a:visited{
+        width:100%;
+        height:100%;
+        padding:10px;
+        color: #4b7582;
+    }
+    ol li.menuLink a:hover, #studentInfo a:hover{
+        color: #1e2124;
+    }
+    ol li.menuLink:hover{
+        background-color: #d9e6f6;
+    }
+    li.video a:link, li.link a:link, a.url:link, p.firstLine a:link, #mainContent a:link {
+        text-decoration: none;
+        color: #1e2124;
+        border-bottom: 1px dashed #1e2124;
+    }
+    li.video a:visited, li.link a:visited, a.url:visited, p.firstLine a:visited, #mainContent a:visited{
+        color: #1e2124;
+    }
+    li.video a:hover, li.link a:hover, a.url:hover, p.firstLine a:hover, #mainContent a:hover{
+        color: #4b7582;
+        border:none;
+    }
+    /*############# HEADER ##################*/
+    #studentInfo{
+        width:100%;
+        margin:1% 0 0 0;
+        padding: 1% 0%;
+        border-top: 2px solid #1e2124;
+        border-bottom: 5px double #1e2124;
+    }
+    #studentInfo span{
+        width:20%;
+        margin-right: 20%;
+    }
+    /*########## NAVIGATION #################*/
+    #mainMenu{
+        border-bottom: 2px solid #1e2124;
         width: 100%;
-        font-size: 1.3em;
-        text-align: center;
-        flex:2;
+        margin:0 auto;
     }
+    #mainMenu ol{
+        width:90%;
+        list-style-type: none;
+        padding: 0;
+        margin:0;
+    }
+    #mainMenu ol li{
+        display: inline-block;
+        font-size: 1.0em;
+        padding:2% 0.5%;
+        margin:0;
+        /*border-radius: 15px;*/
+    }
+    #mainMenu ol li:last-child{
+        border:none;
+    }
+    /*######### MILESTONES ############*/
     #upcoming{
-        margin-top: 3%;
-        width: 70%;
-        float: right;
-        top: 30%;
+        position: relative;
+        margin-top: 5%;
+        clear:left;
         display: flex;
         align-items:top;
         flex-flow: row wrap;
         align-content:flex-end;
         justify-content:space-around;
     }
+    #upcoming h1{
+        position: absolute;
+        top:-70px;
+        width:100%;
+        text-align: center;
+        font-size: 2em;
+    }
+    #upcoming div.box h1{
+        font-size:1.5em;
+        position: static;
+        text-align: center;
+    }
     .box{
         width:45%;
         margin:2% 1%;
-        border: 1px solid #1e2124;
-        border-radius: 8px;
+        border: 5px double #1e2124;
         flex:1;
         -webkit-box-shadow: inset -7px -14px 86px 0px rgba(170,170,170,.77);
         -moz-box-shadow: inset -7px -14px 86px 0px rgba(170,170,170,.77);
         box-shadow: inset -7px -14px 86px 0px rgba(170,170,170,.77 );
     }
-    #mainContent .box ol{
-        width:90%;
-        list-style-type: decimal;
-        margin: 0 auto;
+    .box ol{
+        width: 90%;
+        margin:0 auto;
+        padding:0;
+        list-style: inside decimal;
     }
-    /******** Assignment Page **********/
-    #mainContent ol{
-        width: 65%;
-        clear: left;
-        float: right;
-        margin:1% auto;
-        /*list-style-type: upper-roman;*/
-        list-style:inside upper-roman;;
-    }
-    ol.AssignmentsLink {
-        border: 1px solid #1e2124;
-        border-radius: 8px;
-        padding: .5%;
-    }
-    ol.AssignmentsLink li:nth-child(odd){
-        -webkit-box-shadow: inset -7px -14px 86px 0px rgba(170,170,170,.77);
-        -moz-box-shadow: inset -7px -14px 86px 0px rgba(170,170,170,.77);
-        box-shadow: inset -7px -14px 86px 0px rgba(170,170,170,.77 );
-    }
-    #mainContent ol li{
+    .box ol li{
         line-height: 30px;
     }
-    /********** Lecture Page ************/
-    ol.LecturesLink {
+    /*############ ASSIGNMENTS ############*/
+    #assignments #mainContent h2{
+        font-size: 1.7em;
+        text-align: center;
+        width:50%;
+        margin:5% auto;
+        border-bottom: 1px dashed #1e2124;
+    }
+    #assignments ol.AssignmentsLink {
+        width:70%;
+        margin: 0 auto;
+        list-style:inside upper-roman;
         border: 1px solid #1e2124;
         border-radius: 8px;
         padding: .5%;
     }
-    ol.LecturesLink li:nth-child(odd){
+    #assignments ol.AssignmentsLink li{
+        line-height: 3em;
+    }
+    #assignments ol.AssignmentsLink li:nth-child(odd){
         -webkit-box-shadow: inset -7px -14px 86px 0px rgba(170,170,170,.77);
         -moz-box-shadow: inset -7px -14px 86px 0px rgba(170,170,170,.77);
         box-shadow: inset -7px -14px 86px 0px rgba(170,170,170,.77 );
     }
-    /********** Resources Page **********/
+    #assign #otherMedia ol{
+        width:50%;
+    }
+    #assign #slide h2{
+        font-size:1.1em;
+    }
+    /*############ RESOURCES ##############*/
     #otherMedia {
-        width: 70%;
-        float: right;
+        width: 100%;
+        clear:both;
+    }
+    #otherMedia + h1, #otherMedia > h1{
+        width:100%;
+        margin-left:3%;
+        float:left;
     }
     #otherMedia ol {
-        width:100%;
+        width:90%;
+        margin: 0 auto;
         list-style: outside none;
     }
     #otherMedia ol li figure img{
@@ -224,61 +214,319 @@
     }
     #otherMedia figure{
         margin: 0 auto;
+        height: 40px;
+        width:inherit;
+        text-align: center;
+        vertical-align: middle;
+        padding: 5px;
     }
     #otherMedia ol li {
         background-color: rgba(170,170,170,.5);
         position: relative;
-        height: 60px;
-        width:85%;
         display: inline-block;
         margin: 5px;
-        padding: 5px;
-        text-align: right;
+        padding-bottom: 20px;
+        width:85%;
+        height:60px;
+        text-align: center;
         line-height: 20px;
     }
-    #otherMedia ol li figure:after{
+    #otherMedia ol li:after{
         content: '';
         position: absolute;
         left:100%;
         width: 0;
         height: 0;
-        border-top: 35px solid transparent;
-        border-left: 25px solid rgba(170,170,170,.5);
-        border-bottom: 35px solid transparent;
-        margin: -5px 0px;
+        border-top: 40px solid transparent;
+        border-left: 30px solid rgba(170,170,170,.5);
+        border-bottom: 40px solid transparent;
+        margin: -50px 0px;
     }
-    /********** Calendar Page ***********/
-    table{
+
+
+    /******** Syllabus *************/
+
+    #syllabus p{
+        display:inline-block;
+        text-align:center;
+        width:100%
+    }
+    #syllabus #mainContent h1{
+        font-size: 1.8em;
+        text-align:center;
+        float:none;
+        display:inline-block;
+        width:100%;
+    }
+    #syllabus #mainContent h2{
+        font-size: 1.8em;
+        text-align:center;
+        float:none;
+        display:inline-block;
+        width:100%;
+    }
+    #syllabus #mainContent h3{
+        font-size: 1.8em;
+        text-align:center;
+        float:none;
+        display:inline-block;
+        width:100%;
+    }
+
+    #syllabus div.header{
+        font-size: 1.5em;
+        text-align:center;
+        float:none;
+        display:inline-block;
+        width:100%;
+        border-bottom: 2px solid #1e2124;
+    }
+    #syllabus ul{
+        width:85%;
+    }
+
+    #syllabus table{
         border-collapse: collapse;
         margin: 0 auto;
     }
-    td{
+    #syllabus td{
         width: 1.2in;
         height: 1.2in;
         border-style: solid;
         border-width: 3px;
         border-color: #1e2724;
     }
-    .monthHeader{
+
+    /******* Sick **********/
+
+    #sick #mainContent p{
+        width:100%;
+        display:inline-block;
+        text-align:center;
+    }
+
+    /********* Grades *********/
+    #grades #mainMenu{
+        margin-bottom:1em;
+    }
+
+    #grades table{
+        margin-top:1em;
+    }
+
+    /********* Calendar *************/
+    #calendar table{
+        border-collapse: collapse;
+        margin: 0 auto;
+    }
+    #calendar td{
+        width: 1.2in;
+        height: 1.2in;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #1e2724;
+    }
+    #calendar .monthHeader{
         font-size: 2em;
         padding: 10px;
     }
-    /*I can't figure out how to get the date number to live in the top left corner of each td*/
-    .date{
-        position: relative;
-        top: 0%;
-        right: 0%;
+    .Absent{
+        color: #ffbfbf !important;
+        background: #aa0011 !important;
+        text-align: center; 
+    }
+
+    .assignment{
+        color: #cc4444;
+        margin:0;
+        padding: 0.125em 0.25em 0 0.25em;
+        text-align:center;   
+    }
+
+    .callInSick{
+        float: left;
+        margin: 0;
+    }
+
+    #calendar div.date{
+        float: right; 
+        text-align:center; 
+        border: 1px solid gray; 
+        border-width: 0 0 1px 1px; 
+        padding: 0.125em 0.25em 0 0.25em; 
+        margin:0;
+        width: 2em;
         font-size: 1.5em;
     }
-    /******** FOOTER *******/
+    .Excused{
+        color: #aa0011 !important;
+        background: #ffadad !important;
+        text-align: center; 
+    }
+
+    #fullCalendar{
+        float:right;
+        font-size: small;
+    }
+    .labComplete{
+        color: #24B300 !important;
+        background: #ffcfcf !important;
+        text-align: center; 
+    }
+
+    .FreeDay{
+        color: #24B300 !important;
+        background: #aacfcf !important;
+        text-align: center;
+        
+    }
+
+    .Late{
+        color: #24B300 !important;
+        background: #ddffdf !important;
+        text-align: center; 
+    }
+
+    .Personal{
+        color: #aa0011 !important;
+        background: #ffcfcf !important;
+        text-align: center; 
+    }
+
+    .Present{
+        color: #24B300 !important;
+        background: #CCFFBF !important;
+        text-align: center;
+    }
+
+    .presentation{
+        border: dashed medium #ff0000 !important;
+    }
+    .Sick{
+        color: #aa0011 !important;
+        background: #ffadad !important;
+        text-align: center; 
+    }
+
+    .submitted{
+        border: thin solid green;
+    }
+
+    .notSubmitted{
+        border:thin solid red;
+    }
+    .TOPIC { 
+        color: #4444CC; 
+        text-align:center; 
+        padding: 0.125em 0.25em 0 0; 
+        margin:0;  
+    }
+
+    .VACA {
+        background-color: gray;
+        font-style: italic;
+    }
+
+    ol.taVisists li{
+        list-style-type: none;
+        margin-left: 0;
+    }
+
+    ol.taVisists li.null{
+        font-weight: bold;
+    }
+    ol.taVisists li.null:before{
+        content: "Appt ";
+    }
+
+    ol.taVisists li.Show{
+        background: none repeat scroll 0 0 #ccffbf !important;
+        color: #24b300 !important;
+    }
+    ol.taVisists li.NoShow{
+        background: none repeat scroll 0 0 #aa0011 !important;
+        color: #ffbfbf !important;
+    }
+
+    tr.days{
+        width:18%;
+    }
+
+    tr.days th.sat, tr.days th.sun {
+        width:14%;
+    }
+
+    #calendar table tr.days th,  table tr.days th {
+        background-color: #224;
+        color: #cce;
+        font-weight: bold;
+        padding: 1px 0.33em;
+        text-align: center;
+    }
+
+    #calendar table tr#title th {
+        background-color: #AAC; 
+        color: black;
+        border: 1px solid #242;
+        font-size: 120%;
+    }
+
+    #calendar table td {
+        vertical-align:top;
+        padding:3px; 
+        border: 0px solid gray; 
+        border-width: 0 0 1px 1px;
+        width:14%;
+    }
+
+    #calendar table td.Sat {
+        border-width: 0 1px 1px 1px;
+    }
+
+    #calendar table a {
+        text-decoration: none;
+        font-weight: bold;
+        display: block; 
+    }
+
+    td.Sat div.date, td.Sun div.date{
+        border-width: 0;
+        color: gray; 
+        background: transparent;
+    }
+
+    td.Jun div.date, td.Aug div.date{
+        border-width: 0; 
+        color: gray; 
+        background: transparent;
+    }   
+
+    #calendar table td.Sat, #calendar table td.Sun {
+        background: #ddd;
+    }
+
+    #calendar table td.lastMonth, #calendar table td.nextMonth, #calendar table td.prevMonth {
+        background: #AAB; 
+        color: #889;
+    }
+
+    #calendar table tr#lastweek td {
+        border-bottom: 2px solid #AAB;
+    }
+
+    #calendar table td.atoday {
+        color: lightgreen;
+        font-weight: bold; 
+        background: #80B280;
+        border: 1px solid black;
+    }
+
+
+    /*############ FOOTER ##############*/
     footer{
-        position: relative;
-        top:400px;
-        background-color: rgba(255,255,255, 0.77);
-        color: #1e2124;
-        width: 80%;
-        padding: 1% 1%;
-        margin: 0 auto;
+        width:100%;
+        margin-top: 1%;
         border-top: 1px solid #1e2124;
     }
+
 }
