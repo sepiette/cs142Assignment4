@@ -4,8 +4,6 @@
 /**** Calendar, Submit Assignment -- KEVIN****/ 
 /***** GENERAL STYLES DESKTOP*******/
 @media screen and (min-width: 400px) and (max-width: 1800px){
-    @import url('reset.css');
-
 
 /******** GENERAL HTML *********/
 html{
@@ -45,7 +43,6 @@ h4{
  #classtitle{
         font-size: 2em;
         text-align: center;
-        background-color: 
 
     }
     #classtitle a:link{
@@ -61,35 +58,49 @@ h4{
         border:none;
     }
 
-    ol li.menuLink a:link, #studentInfo a:link{
+    #mainMenu ol li.menuLink a:link, #studentInfo a:link{
         width:100%;
         height:100%;
         padding:10px;
         text-decoration: none;
         color: #4b7582;
     }
-    ol li.menuLink a:visited, #studentInfo a:visited{
+    #mainMenu ol li.menuLink a:visited, #studentInfo a:visited{
         width:100%;
         height:100%;
         padding:10px;
+        text-decoration: none;
         color: #4b7582;
     }
-    ol li.menuLink a:hover, #studentInfo a:hover{
+    #mainMenu ol li.menuLink a:hover, #studentInfo a:hover{
         color: #1e2124;
     }
     ol li.menuLink:hover{
         background-color: #d9e6f6;
     }
 
-    li.video a:link, li.link a:link, a.url:link, p.firstLine a:link, #mainContent a:link {
+    #slide p.firstLine a:link, #submitAssignment a:link{
+        color: #4b7582;
+        border-bottom: 1px dashed #1e2124;
+    }
+    #slide p.firstLine a:link, #submitAssignment a:visited{
+        color: #4b7582;
+    }
+
+    #slide p.firstLine a:hover, #submitAssignment a:hover{
+        border:none;
+        color:#1e2124;
+    }
+
+    li.video a:link, li.link a:link, a.url:link, #slide a:link {
         text-decoration: none;
         color: #1e2124;
         border-bottom: 1px dashed #1e2124;
     }
-    li.video a:visited, li.link a:visited, a.url:visited, p.firstLine a:visited, #mainContent a:visited{
+    li.video a:visited, li.link a:visited, a.url:visited,#slide a:visited{
         color: #1e2124;
     }
-    li.video a:hover, li.link a:hover, a.url:hover, p.firstLine a:hover, #mainContent a:hover{
+    li.video a:hover, li.link a:hover, a.url:hover, #slide a:hover{
         color: #4b7582;
         border:none;
         
@@ -136,7 +147,6 @@ h4{
         margin-top: 5%;
        clear:left;
        display: flex;
-       align-items:top;
        flex-flow: row wrap;
        align-content:flex-end;
        justify-content:space-around;
@@ -188,8 +198,7 @@ h4{
     width:70%;
     margin: 0 auto;
     list-style:inside upper-roman;
-    border: 1px solid #1e2124;
-    border-radius: 8px;
+    border: 5px double #1e2124;
     padding: .5%;
 
 }
@@ -207,6 +216,20 @@ h4{
 }
 #assign #slide h2{
     font-size:1.1em;
+}
+
+#assign #slide ol{
+    list-style-type: upper-roman;
+    width:80%;
+    margin:0 auto;
+    border: 5px double #1e2124;
+}
+#assign #slide ol li > ol{
+    border:none;
+}
+
+#assign #slide ol li{
+    line-height: 30px;
 }
 /*############ RESOURCES ##############*/
 #otherMedia {
@@ -262,6 +285,70 @@ h4{
     border-bottom: 40px solid transparent;
     margin: -50px 0px; 
 }
+
+/*############ LECTURES ##############*/
+#lectures #mainContent h2{
+    font-size: 1.7em;
+    text-align: center;
+    width:50%;
+    margin:5% auto;
+    border-bottom: 1px dashed #1e2124;
+}
+#lectures ol.LecturesLink{
+    width:70%;
+    margin: 0 auto;
+    list-style:inside upper-roman;
+    border: 5px double #1e2124;
+    padding: .5%;
+
+}
+#lectures ol.LecturesLink li{
+    line-height: 3em;
+}
+#lectures ol.LecturesLink li:nth-child(odd){
+    -webkit-box-shadow: inset -7px -14px 86px 0px rgba(170,170,170,.77);
+    -moz-box-shadow: inset -7px -14px 86px 0px rgba(170,170,170,.77);
+    box-shadow: inset -7px -14px 86px 0px rgba(170,170,170,.77 );
+}
+#lectures #upcoming .box ol.LecturesLink{
+        width: 90%;
+        margin:0 auto;
+        padding:0;
+       list-style: inside decimal;
+       border:none;
+}
+#lectures #upcoming .box ol.LecturesLink li{
+    box-shadow:none;
+}
+#lecture #otherMedia ol{
+    width:50%;
+}
+#lecture #slide h2{
+    font-size:1.1em;
+}
+
+#lecture #slide ol{
+    list-style-type: upper-roman;
+    width:80%;
+    margin:0 auto;
+    border: 5px double #1e2124;
+}
+#lecture #slide ol li > ol{
+    border:none;
+}
+
+#lecture #slide ol li{
+    line-height: 30px;
+}
+
+#lecture #otherMedia + h1{
+    width:100%;
+    margin-left:3%;
+    float:none;
+
+
+}
+
 
 /*############ FOOTER ##############*/
 footer{
