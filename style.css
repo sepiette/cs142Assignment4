@@ -349,6 +349,282 @@ h4{
 
 }
 
+ /******** Syllabus *************/
+
+    #syllabus p{
+        display:inline-block;
+        text-align:center;
+        width:100%
+    }
+    #syllabus #mainContent h1{
+        font-size: 1.8em;
+        text-align:center;
+        float:none;
+        display:inline-block;
+        width:100%;
+    }
+    #syllabus #mainContent h2{
+        font-size: 1.8em;
+        text-align:center;
+        float:none;
+        display:inline-block;
+        width:100%;
+    }
+    #syllabus #mainContent h3{
+        font-size: 1.8em;
+        text-align:center;
+        float:none;
+        display:inline-block;
+        width:100%;
+    }
+
+    #syllabus div.header{
+        font-size: 1.5em;
+        text-align:center;
+        float:none;
+        display:inline-block;
+        width:100%;
+        border-bottom: 2px solid #1e2124;
+    }
+    #syllabus ul{
+        width:85%;
+    }
+
+    #syllabus table{
+        border-collapse: collapse;
+        margin: 0 auto;
+    }
+    #syllabus td{
+        width: 1.2in;
+        height: 1.2in;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #1e2724;
+    }
+
+    /******* Sick **********/
+
+    #sick #mainContent p{
+        width:100%;
+        display:inline-block;
+        text-align:center;
+    }
+
+    /********* Grades *********/
+    #grades #mainMenu{
+        margin-bottom:1em;
+    }
+
+    #grades table{
+        margin-top:1em;
+    }
+
+    /********* Calendar *************/
+    #calendar table{
+        border-collapse: collapse;
+        margin: 0 auto;
+    }
+    #calendar td{
+        width: 1.2in;
+        height: 1.2in;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #1e2724;
+    }
+    #calendar .monthHeader{
+        font-size: 2em;
+        padding: 10px;
+    }
+    .Absent{
+        color: #ffbfbf !important;
+        background: #aa0011 !important;
+        text-align: center; 
+    }
+
+    .assignment{
+        color: #cc4444;
+        margin:0;
+        padding: 0.125em 0.25em 0 0.25em;
+        text-align:center;   
+    }
+
+    .callInSick{
+        float: left;
+        margin: 0;
+    }
+
+    #calendar div.date{
+        float: right; 
+        text-align:center; 
+        border: 1px solid gray; 
+        border-width: 0 0 1px 1px; 
+        padding: 0.125em 0.25em 0 0.25em; 
+        margin:0;
+        width: 2em;
+        font-size: 1.5em;
+    }
+    .Excused{
+        color: #aa0011 !important;
+        background: #ffadad !important;
+        text-align: center; 
+    }
+
+    #fullCalendar{
+        float:right;
+        font-size: small;
+    }
+    .labComplete{
+        color: #24B300 !important;
+        background: #ffcfcf !important;
+        text-align: center; 
+    }
+
+    .FreeDay{
+        color: #24B300 !important;
+        background: #aacfcf !important;
+        text-align: center;
+        
+    }
+
+    .Late{
+        color: #24B300 !important;
+        background: #ddffdf !important;
+        text-align: center; 
+    }
+
+    .Personal{
+        color: #aa0011 !important;
+        background: #ffcfcf !important;
+        text-align: center; 
+    }
+
+    .Present{
+        color: #24B300 !important;
+        background: #CCFFBF !important;
+        text-align: center;
+    }
+
+    .presentation{
+        border: dashed medium #ff0000 !important;
+    }
+    .Sick{
+        color: #aa0011 !important;
+        background: #ffadad !important;
+        text-align: center; 
+    }
+
+    .submitted{
+        border: thin solid green;
+    }
+
+    .notSubmitted{
+        border:thin solid red;
+    }
+    .TOPIC { 
+        color: #4444CC; 
+        text-align:center; 
+        padding: 0.125em 0.25em 0 0; 
+        margin:0;  
+    }
+
+    .VACA {
+        background-color: gray;
+        font-style: italic;
+    }
+
+    ol.taVisists li{
+        list-style-type: none;
+        margin-left: 0;
+    }
+
+    ol.taVisists li.null{
+        font-weight: bold;
+    }
+    ol.taVisists li.null:before{
+        content: "Appt ";
+    }
+
+    ol.taVisists li.Show{
+        background: none repeat scroll 0 0 #ccffbf !important;
+        color: #24b300 !important;
+    }
+    ol.taVisists li.NoShow{
+        background: none repeat scroll 0 0 #aa0011 !important;
+        color: #ffbfbf !important;
+    }
+
+    tr.days{
+        width:18%;
+    }
+
+    tr.days th.sat, tr.days th.sun {
+        width:14%;
+    }
+
+    #calendar table tr.days th,  table tr.days th {
+        background-color: #224;
+        color: #cce;
+        font-weight: bold;
+        padding: 1px 0.33em;
+        text-align: center;
+    }
+
+    #calendar table tr#title th {
+        background-color: #AAC; 
+        color: black;
+        border: 1px solid #242;
+        font-size: 120%;
+    }
+
+    #calendar table td {
+        vertical-align:top;
+        padding:3px; 
+        border: 0px solid gray; 
+        border-width: 0 0 1px 1px;
+        width:14%;
+    }
+
+    #calendar table td.Sat {
+        border-width: 0 1px 1px 1px;
+    }
+
+    #calendar table a {
+        text-decoration: none;
+        font-weight: bold;
+        display: block; 
+    }
+
+    td.Sat div.date, td.Sun div.date{
+        border-width: 0;
+        color: gray; 
+        background: transparent;
+    }
+
+    td.Jun div.date, td.Aug div.date{
+        border-width: 0; 
+        color: gray; 
+        background: transparent;
+    }   
+
+    #calendar table td.Sat, #calendar table td.Sun {
+        background: #ddd;
+    }
+
+    #calendar table td.lastMonth, #calendar table td.nextMonth, #calendar table td.prevMonth {
+        background: #AAB; 
+        color: #889;
+    }
+
+    #calendar table tr#lastweek td {
+        border-bottom: 2px solid #AAB;
+    }
+
+    #calendar table td.atoday {
+        color: lightgreen;
+        font-weight: bold; 
+        background: #80B280;
+        border: 1px solid black;
+    }
 
 /*############ FOOTER ##############*/
 footer{
