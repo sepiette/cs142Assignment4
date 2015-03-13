@@ -58,36 +58,80 @@ h4{
         border:none;
     }
 
-    #mainMenu ol li.menuLink a:link, #studentInfo a:link{
+    #mainMenu ol li.menuLink a:link, #studentInfo a:link, #syllabus .dayColumn a:link{
         width:100%;
         height:100%;
         padding:10px;
         text-decoration: none;
         color: #4b7582;
     }
-    #mainMenu ol li.menuLink a:visited, #studentInfo a:visited{
+
+    #mainMenu ol li.menuLink a:visited, #studentInfo a:visited, #syllabus .dayColumn a:visited{
         width:100%;
         height:100%;
         padding:10px;
         text-decoration: none;
         color: #4b7582;
     }
-    #mainMenu ol li.menuLink a:hover, #studentInfo a:hover{
+    #mainMenu ol li.menuLink a:hover, #studentInfo a:hover, #syllabus .dayColumn a:hover{
         color: #1e2124;
     }
     ol li.menuLink:hover{
         background-color: #d9e6f6;
     }
 
-    #slide p.firstLine a:link, #submitAssignment a:link{
+    #assignments ol li.menuLink:first-child, #assign ol li.menuLink:first-child{
+        background-color: #d9e6f6;
+        border-left: 1px dashed #1e2124;
+        border-right: 1px dashed #1e2124;
+    }
+    #calendar ol li.menuLink:nth-child(2){
+        background-color: #d9e6f6;
+        border-left: 1px dashed #1e2124;
+        border-right: 1px dashed #1e2124;
+    }
+    #lectures ol li.menuLink:nth-child(3), #lecture ol li.menuLink:nth-child(3){
+        background-color: #d9e6f6;
+        border-left: 1px dashed #1e2124;
+        border-right: 1px dashed #1e2124;
+    }
+     #media ol li.menuLink:nth-child(4){
+        background-color: #d9e6f6;
+        border-left: 1px dashed #1e2124;
+        border-right: 1px dashed #1e2124;
+    }
+
+    #sick ol li.menuLink:nth-child(5){
+        background-color: #d9e6f6;
+        border-left: 1px dashed #1e2124;
+        border-right: 1px dashed #1e2124;
+    }
+
+     #syllabus ol li.menuLink:nth-child(6){
+        background-color: #d9e6f6;
+        border-left: 1px dashed #1e2124;
+        border-right: 1px dashed #1e2124;
+    }
+
+     #submitAssignment ol li.menuLink:last-child{
+        background-color: #d9e6f6;
+        border-left: 1px dashed #1e2124;
+        border-right: 1px dashed #1e2124;
+    }
+
+    #syllabus .dayColumn a:link, #syllabus .dayColumn a:visited{
+        font-size: 1.5em;
+    }
+
+    #slide p.firstLine a:link, #submitAssignment #mainContent a:link{
         color: #4b7582;
         border-bottom: 1px dashed #1e2124;
     }
-    #slide p.firstLine a:link, #submitAssignment a:visited{
+    #slide p.firstLine a:link, #submitAssignment #mainContent a:visited{
         color: #4b7582;
     }
 
-    #slide p.firstLine a:hover, #submitAssignment a:hover{
+    #slide p.firstLine a:hover, #submitAssignment #mainContent a:hover{
         border:none;
         color:#1e2124;
     }
@@ -401,7 +445,30 @@ h4{
         border-width: 3px;
         border-color: #1e2724;
     }
-
+    #syllabus .hourBox {
+        border:5px double #1e2124;
+    }
+    #syllabus .hourBox span{
+        height:80px;
+        margin-top: 5%;
+    }
+    #syllabus .hourBox span.startTime{
+        width:10%;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    #syllabus .hourBox span.taName{
+        width:15%;
+        margin-right:10%;
+    }
+    #syllabus .hourBox span.where{
+        width:15%;
+        margin-right: 10%
+    }
+    #syllabus .hourBox span.endTime{
+        width:10%;
+        margin-right: 10%
+    }
     /******* Sick **********/
 
     #sick #mainContent p{
