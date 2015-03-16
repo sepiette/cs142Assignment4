@@ -181,7 +181,7 @@ h4{
         /*border-radius: 15px;*/
     }
      #mainMenu ol li:last-child{
-        border:none;
+        border:none;      
     }
    
 /*######### MILESTONES ############*/
@@ -487,13 +487,13 @@ h4{
     }
 
     #grades .NotGraded {
-        background-color: rgba(170, 0, 16, 0.5);
+        background-color: rgba(209, 104, 110, 0.5);
     }
     #grades .GradingStarted {
-        background-color: rgba(0, 16, 170, 0.5);
+        background-color: rgba(65, 126, 128, 0.5);
     }
     #grades .GradesReleased{
-        background-color: rgba(0, 170, 16, 0.5);
+        background-color: rgba(141, 207, 138, 0.5);
     }
 
     /********* Calendar *************/
@@ -590,12 +590,23 @@ h4{
         text-align: center; 
     }
 
-    .submitted{
-        border: thin solid green;
+
+    #calendar .notSubmitted, .notSubmitted > a.url:link, .notSubmitted > a.url:visited{
+        /*border:thin solid red;*/
+        color: #801515;
+        border: none;
+    }
+    
+    #calendar .notSubmitted > a.url:hover{
+         border-bottom: 1px dashed #1e2124;
     }
 
-    .notSubmitted{
-        border:thin solid red;
+    #calendar .submitted, .submitted > a.url:link, .submitted > a.url:visited{
+        color: #034500;
+        border: none;
+    }
+   #calendar .submitted > a.url:hover{
+        border-bottom: 1px dashed #1e2124;
     }
     .TOPIC { 
         color: #4444CC; 
@@ -605,8 +616,22 @@ h4{
     }
 
     .VACA {
-        background-color: gray;
+        background-color: rgba(80,80,80,.5);
         font-style: italic;
+    }
+    .VACA > div.event{
+        background-color: transparent;
+    }
+
+    #calendar .INFO > a:link, #calendar .INFO > a:visited{
+       color: #4b7582;
+    }  
+    
+    #calendar .INFO > a:hover{
+       color: #1e2124;
+    }  
+    #calendar .lecture > a.url:link, #calendar .lecture > a.url:visited{
+        border:none;
     }
 
     ol.taVisists li{
@@ -665,6 +690,10 @@ h4{
         border-width: 0 1px 1px 1px;
     }
 
+    #calendar td.days:hover{
+        background-color:  rgba(200, 200, 200, 0.8);
+    }
+
     #calendar table a {
         text-decoration: none;
         font-weight: bold;
@@ -699,7 +728,7 @@ h4{
     #calendar table td.atoday {
         color: lightgreen;
         font-weight: bold; 
-        background: #80B280;
+        background: rgba(128,178,128,0.8);
         border: 1px solid black;
     }
 
@@ -708,5 +737,24 @@ footer{
         width:100%;
         margin-top: 1%;
         border-top: 1px solid #1e2124;
+    }
+}
+
+@media print{
+        body{
+    width: 100%;
+    margin: 10%;
+    float: none;
+    }
+
+    *{
+
+       font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+       color: black;
+      background-color: white;
+    }
+
+    img{
+    display: none;
     }
 }
