@@ -62,6 +62,7 @@ h4{
         width:100%;
         height:100%;
         padding:10px;
+        border:none;
         text-decoration: none;
         color: #4b7582;
     }
@@ -71,6 +72,7 @@ h4{
         height:100%;
         padding:10px;
         text-decoration: none;
+        border:none;
         color: #4b7582;
     }
     #mainMenu ol li.menuLink a:hover, #studentInfo a:hover, #syllabus .dayColumn a:hover{
@@ -120,18 +122,21 @@ h4{
     }
 
     #syllabus .dayColumn a:link, #syllabus .dayColumn a:visited{
-        font-size: 1.5em;
+        font-size: 1.0em;
     }
 
-    #slide p.firstLine a:link, #submitAssignment #mainContent a:link{
+    #syllabus a:link, #slide p.firstLine a:link, #submitAssignment #mainContent a:link{
         color: #4b7582;
+        text-decoration: none;
         border-bottom: 1px dashed #1e2124;
     }
-    #slide p.firstLine a:link, #submitAssignment #mainContent a:visited{
+    #syllabus a:visited, #slide p.firstLine a:visited, #submitAssignment #mainContent a:visited{
         color: #4b7582;
+        text-decoration: none;
+        border-bottom: 1px dashed #1e2124;
     }
 
-    #slide p.firstLine a:hover, #submitAssignment #mainContent a:hover{
+    #syllabus a:hover, #slide p.firstLine a:hover, #submitAssignment #mainContent a:hover{
         border:none;
         color:#1e2124;
     }
@@ -424,6 +429,7 @@ h4{
 
     #syllabus div.header{
         font-size: 1.5em;
+        color: #4b7582;
         text-align:center;
         float:none;
         display:inline-block;
@@ -445,29 +451,48 @@ h4{
         border-width: 3px;
         border-color: #1e2724;
     }
+        #syllabus .dayColumn {
+        width:20%;
+        float: left;
+    }
     #syllabus .hourBox {
         border:5px double #1e2124;
+        margin: 2%;
+        overflow: auto;
     }
+     #syllabus .hourBox:hover{
+         background-color: #ffffff;
+     }
     #syllabus .hourBox span{
         height:80px;
-        margin-top: 5%;
+       
     }
     #syllabus .hourBox span.startTime{
-        width:10%;
         margin-right: 10%;
-        margin-left: 10%;
     }
     #syllabus .hourBox span.taName{
         width:15%;
         margin-right:10%;
     }
+    #syllabus .hourBox span.taName:before{
+        content:"\a";
+        white-space: pre;
+    }
     #syllabus .hourBox span.where{
         width:15%;
         margin-right: 10%
     }
+    #syllabus .hourBox span.where:before {
+        content:"\a";
+        white-space: pre;     
+    }
     #syllabus .hourBox span.endTime{
         width:10%;
         margin-right: 10%
+    }
+    #syllabus .hourBox span.endTime:before{
+        content:"\a";
+        white-space: pre; 
     }
     /******* Sick **********/
 
